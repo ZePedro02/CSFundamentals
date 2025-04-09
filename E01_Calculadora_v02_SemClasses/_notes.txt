@@ -1,0 +1,44 @@
+﻿***************************************************
+				Algoritmo calculadora
+***************************************************
+
+
+----------------------------
+1.Objetivo e Funcionalidades
+----------------------------
+
+Criar uma calculadora com as 4 operações aritméticas
+ 
+Funcionalidades:
+Apresentar menu com 4 operações: 4 com as operações
+Pedir 2 valores e a operação a executar
+
+----------------------------------
+2.Representar em Linguagem natural
+----------------------------------
+
+1. Ínicio
+2. Escrever o menu
+3.Ler operação
+
+4.Se escolher uma operação válida
+	5 Se escolher uma operção
+	6 Ler número 1
+
+		7.Se número 1 for válido
+			8. Ler número2
+
+				9. Se número 2 for válido
+					10. Calcular o resultado
+					11. Escrever o resultado
+
+				12. Senão
+					13. Escrever Número invalido
+
+		14. Senão
+		15. Escrever Número inválido
+
+16. Senão
+	17. Ecrever Operação inválida
+
+18. Fim

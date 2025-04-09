@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D06_DataTypeConversion", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01_Calculadora_v01_SemClasses", "E01_Calculadora_v01_SemClasses\E01_Calculadora_v01_SemClasses.csproj", "{9744AD56-4C42-4802-BC5F-AF818FC22F6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01_Calculadora_v02_SemClasses", "E01_Calculadora_v02_SemClasses\E01_Calculadora_v02_SemClasses.csproj", "{4E5CEBD7-75EE-4270-83D2-DAE1F64327E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{9744AD56-4C42-4802-BC5F-AF818FC22F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9744AD56-4C42-4802-BC5F-AF818FC22F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9744AD56-4C42-4802-BC5F-AF818FC22F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E5CEBD7-75EE-4270-83D2-DAE1F64327E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E5CEBD7-75EE-4270-83D2-DAE1F64327E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E5CEBD7-75EE-4270-83D2-DAE1F64327E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E5CEBD7-75EE-4270-83D2-DAE1F64327E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

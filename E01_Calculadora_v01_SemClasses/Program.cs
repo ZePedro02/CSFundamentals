@@ -26,10 +26,10 @@ namespace E01_Calculadora_v01_SemClasses
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Que operação pretende fazer?");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("    Adição- 'a'");
-            Console.WriteLine("    Subtração- 's'");
-            Console.WriteLine("    Multiplicação- 'm'");
-            Console.WriteLine("    Divisão- 'd'");
+            Console.WriteLine("    'a' - Adição");
+            Console.WriteLine("    's' - Subtração");
+            Console.WriteLine("    'm' - Multiplicação");
+            Console.WriteLine("    'd' - Divisão");
             operacao = Console.ReadLine();
             #region Multiplicação
                 if (operacao == "m")
