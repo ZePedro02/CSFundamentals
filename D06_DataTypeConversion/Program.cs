@@ -33,7 +33,6 @@ namespace D06_DataTypeConversion
             Console.WriteLine( int01+ string01);    //concat 101
             #endregion
 
-
             #region 3. Conversão Implícita: combina dados da mesma natureza
             Utility.WriteTitle("Conversão implícita");
 
@@ -79,13 +78,17 @@ namespace D06_DataTypeConversion
 
             #endregion
             #region 4.4. Método number.TryParse()
+
             Utility.WriteTitle("5. TryParse()");
             int resultNumber01, resultNumber02;
             bool resultSuccess01, resultSuccess02;
             resultSuccess01 = int.TryParse(string01, out resultNumber01); // OK:true --> resultNumber01= 1
             resultSuccess02 = int.TryParse(string03, out resultNumber02); // ERROR --> resultNumber01= 0
+
             Console.WriteLine($"1. Result: {resultSuccess01}; Out: {resultNumber01}");
+
             Console.WriteLine($"1. Result: {resultSuccess02}; Out: {resultNumber02}");
+
             #endregion
             #region 4.5. Operator Cast Números noutros números
             Utility.WriteTitle("5. Conversão CAST");
@@ -96,16 +99,7 @@ namespace D06_DataTypeConversion
 
             #endregion
 
-
-
-
-
-
             #endregion
-
-
-
-
 
             Utility.terminateConsole();
 

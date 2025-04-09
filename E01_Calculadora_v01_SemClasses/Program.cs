@@ -31,7 +31,8 @@ namespace E01_Calculadora_v01_SemClasses
             Console.WriteLine("    Multiplicação- 'm'");
             Console.WriteLine("    Divisão- 'd'");
             operacao = Console.ReadLine();
-            if (operacao == "m")
+            #region Multiplicação
+                if (operacao == "m")
             {
                 Console.WriteLine("Insira o primeiro número");
                 numero01 = Convert.ToDouble(Console.ReadLine());
@@ -41,6 +42,9 @@ namespace E01_Calculadora_v01_SemClasses
                 Console.WriteLine($"\n\nO resultado da multiplicação é {numero01 * numero02}");
                 Console.ForegroundColor = ConsoleColor.White;
             }
+            #endregion
+
+            #region Divisão
             else if (operacao =="d")
             {
                 Console.WriteLine("Insira o primeiro número");
@@ -52,6 +56,9 @@ namespace E01_Calculadora_v01_SemClasses
                 Console.ForegroundColor = ConsoleColor.White;
 
             }
+            #endregion
+
+            #region Adição
             else if (operacao ==("a"))
             {
                 Console.WriteLine("Insira o primeiro número");
@@ -63,7 +70,11 @@ namespace E01_Calculadora_v01_SemClasses
                 Console.ForegroundColor = ConsoleColor.White;
 
             }
-            else  if (operacao == "s")
+            #endregion
+
+            #region Subtração
+
+            else if (operacao == "s")
             {
                 Console.WriteLine("Insira o primeiro número");
                 numero01 = Convert.ToDouble(Console.ReadLine());
@@ -74,7 +85,8 @@ namespace E01_Calculadora_v01_SemClasses
                 Console.ForegroundColor = ConsoleColor.White;
 
             }
-            else 
+            #endregion
+            else
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("\n\nNão escolheu nenhuma operação");
