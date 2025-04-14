@@ -13,18 +13,41 @@ namespace D10_Classes
 
             Utility.setUniCode();
 
-            #region instanciar a classe person (2 objetos)
+            #region instanciar a classe person (2 objetos)  e Atribur valores às propriedades com 1 construtor
             Person person01 = new Person();
             Person person02 = new Person();
-            #endregion
-
-            #region Atribur valores às propriedades
+            person01.ID = 1;
             person01.Name = ("a");
             person01.VAT = "123456789";
-            person02.Name = ("b");
-            person02.VAT = "987654321";
+            person01.Phone = "191919191";
+            person01.City = "aaa";
+            person01.Adress = "aa";
+            person01.Country = "aaaa";
+
+
+
+            /*              Chamar o método para o utilizador escrever as informações
+            */
+            person02.PersonReadData();
+
             #endregion
 
+            #region instanciar a classe person  e Atribur valores às propriedades com 2 construtor
+                Person person03 = new Person(3, "c");
+            #endregion
+
+            #region instanciar a classe person  e Atribur valores às propriedades com 3 construtor
+            Person person04 = new Person(4, "d","978987987","92929929","rua x","cidadinha","paizinho");
+            #endregion
+
+
+            #region Listar as propriedades
+            person01.PersonWriteData();
+            person02.PersonWriteData();
+
+            person04.PersonWriteData();
+
+            #endregion
 
 
             Utility.terminateConsole();
