@@ -35,6 +35,17 @@ namespace D00_Utility
            // Console.WriteLine("á Á à À ã Ã â Â ç Ç º ª");
         }
 
+        public static void WriteMessage(string message, string beginMessage = "", string endMessage = "")
+        {
+            Console.Write($"{beginMessage}{message}{endMessage}");
+        }
+        public static void WriteErrorMessage(string message, string beginMessage = "", string endMessage = "")
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write($"{beginMessage}{message}{endMessage}");
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+
 
         public static void terminateConsole()
         {
