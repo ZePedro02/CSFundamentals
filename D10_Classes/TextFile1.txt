@@ -1,0 +1,39 @@
+﻿CLASS ELEMENTS:
+    Attributes or fields    = variáveis privadas da classe (suporte às propriedades)
+    Properties              = caraterísticas
+    Methods                 = funcionalidades
+    Constructors            = funcionalidade invocada aquando da criação do objeto
+    Destructor              = funcionalidade que permite indicar como é que o objeto é destruído
+EXEMPLO
+    Classe: Produto
+    Objects (instâncias da classe): Produto1, Produto2, Produto3...
+    Properties: Nome, Cor, Unidade, ...
+    Methods: Inserir, Pesquisar, Editar, Apagar, ...
+    Constructor: Cor = verde
+    Destructor (log): informar que o objeto vai ser destruído
+
+----------------------------
+
+// Instanciar objetos da classe
+// Class object = new Class()
+// Garrafa garrafa01 = new Garrafa()
+// Propriedades = properties
+// object.property = value
+// garrafa01.cor = blue
+// garrafa01.volume = 1000
+// garrafa02.cor = yellow
+// garrafa02.volume = 500
+// curso01.nome = "C#"
+// curso01.duracao = 33
+// Ações = methods
+// object.method(arguments)
+// curso01.vender()
+// curso01.faturar()
+// curso02.vender()
+// curso02.faturar()
+
+
+
+
+
+

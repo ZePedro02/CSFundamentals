@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{035EBDCD-6ABB-413E-A06D-504695C659D5}</ProjectGuid>
+    <ProjectGuid>{31606CA7-AB3D-46ED-BC02-2BE3678D7ADC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>D10_Classes</RootNamespace>
-    <AssemblyName>D10_Classes</AssemblyName>
+    <RootNamespace>D11_Methods</RootNamespace>
+    <AssemblyName>D11_Methods</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Person.cs" />
+    <Compile Include="Method.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,9 +55,6 @@
       <Project>{fcd52f53-15e3-4893-8834-fa3be33e3231}</Project>
       <Name>D00_Utility</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

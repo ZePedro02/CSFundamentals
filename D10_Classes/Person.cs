@@ -13,7 +13,6 @@ namespace D10_Classes
         #region Fields (variáveis privadas das propriedades)
 
         private string name;
-
         private string city;
         private string country;
 
@@ -39,7 +38,7 @@ namespace D10_Classes
 
         #region Auto-implemented
 
-        public string VAT { get; set; }
+        public long VAT { get; set; }
         public int ID { get; set; }
 
         public string Adress { get; set; }
@@ -49,10 +48,10 @@ namespace D10_Classes
 
         #region Bodied-expression
         public string Country
-            {
+        {
             get => country;                 // '=>'lambda operator   
             set => country = value;
-             }
+        }
         #endregion
 
 
@@ -63,21 +62,21 @@ namespace D10_Classes
         {
             ID = 0;
             Name = "";
-            VAT = string.Empty;
+           // VAT = string.Empty;
             Adress = "";
             City = "";
             Country = "";
         }
-        public Person(int id, string name, string vat, string phone, string adress, string city, string country)
-        { 
-        ID =id;
-            Name = name;    
+        public Person(int id, string name, long vat, string phone, string adress, string city, string country)
+        {
+            ID = id;
+            Name = name;
             VAT = vat;
             Phone = phone;
             Adress = adress;
             City = city;
             Country = country;
-                
+
         }
         public Person(int id, string name)
         {
@@ -90,28 +89,43 @@ namespace D10_Classes
 
         public void PersonReadData()
         {
-            Utility.WriteTitle("Person- Read data");
-            Utility.WriteMessage("ID: ","" ,"");
-            ID = Convert.ToInt16(Console.ReadLine());
-            //Todo: implementar validação com tryparse
 
-            Utility.WriteMessage("Name: ");
-            Name = Console.ReadLine();
-            Utility.WriteMessage("VAT: ");
-            VAT = Console.ReadLine();
-            Utility.WriteMessage("Phone: ");
-            Phone = Console.ReadLine();
-            Utility.WriteMessage("Adress: ");
-            Adress = Console.ReadLine();
-            Utility.WriteMessage("City: ");
-            City = Console.ReadLine();
-            Utility.WriteMessage("Country: ");
-            Country = Console.ReadLine();
+
+
+            //Utility.WriteTitle("Person- Read data");
+            //Utility.WriteMessage("ID: ","" ,"");
+            // ID = Convert.ToInt16(Console.ReadLine());
+            // implementar validação com tryparse
+            /*
+
+             bool valid;
+             int id;
+             do
+             {
+                 Console.Clear();
+                 Utility.WriteTitle("Person- Read data");
+                 Utility.WriteMessage("ID: ", "", "");
+                 valid = int.TryParse(Console.ReadLine(), out id);
+             }
+             while (valid != true);
+
+             Utility.WriteMessage("Name: ");
+             Name = Console.ReadLine();
+             Utility.WriteMessage("VAT: ");
+             VAT = Console.ReadLine();
+             Utility.WriteMessage("Phone: ");
+             Phone = Console.ReadLine();
+             Utility.WriteMessage("Adress: ");
+             Adress = Console.ReadLine();
+             Utility.WriteMessage("City: ");
+             City = Console.ReadLine();
+             Utility.WriteMessage("Country: ");
+             Country = Console.ReadLine();
+            */
         }
-
-
         public void PersonWriteData()
         {
+
             Utility.WriteTitle("Person- Write data");
             Utility.WriteMessage($"ID: {ID}", "", "\n");
             Utility.WriteMessage($"Name: {Name}", "", "\n");
@@ -127,5 +141,75 @@ namespace D10_Classes
         #endregion
 
 
+        public int ValidadeID()
+        {
+            int id;
+            while (true)
+            {
+                Utility.WriteMessage("ID: ", "");
+                string input = Console.ReadLine();
+                if (int.TryParse(input, out id))
+                {
+                    return id;
+                }
+                else
+                {
+                    Utility.WriteErrorMessage("IS tem de ser número inteiro!", "\n");
+                }
+
+            }
+        }
+
+
+        public void PersonReadDataWithValidation()
+        {
+            Utility.WriteTitle("Person - read data with validation", "");
+
+            ID = ValidadeID();
+
+            Utility.WriteMessage("Name= ");
+            Name = Console.ReadLine();
+
+            VAT = ValidateVAT();
+
+            Utility.WriteMessage("Phone= ");
+            Phone = Console.ReadLine();
+
+            Utility.WriteMessage("Address= ");
+            Adress = Console.ReadLine();
+
+            Utility.WriteMessage("City= ");
+            City = Console.ReadLine();
+
+            Utility.WriteMessage("Country= ");
+            Country = Console.ReadLine();
+        }
+        public long ValidateVAT()
+        {
+            long vat;
+            while (true)
+            {
+                Utility.WriteMessage("VAT: ", "");
+                string input = Console.ReadLine();
+                if (long.TryParse(input, out vat))
+                {
+                    if (input.Length == 9)
+                    {
+                        return vat;
+                    }
+                    else
+                    {
+                        Utility.WriteErrorMessage("O VAT deve ter apenas 9 números!","\n","\n");
+                    }
+                }
+                else
+                {
+                    Utility.WriteErrorMessage("O VAT deve ter apenas 9 números!", "\n", "\n");
+                }
+
+            }
+
+
+        }
     }
 }
