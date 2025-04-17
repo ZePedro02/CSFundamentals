@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -72,14 +73,58 @@ namespace D11_Methods
 
         }
         #endregion
+
         #region 7. Método por instância
+        public void InstanceMethod()
+        {
 
+            Utility.WriteMessage("Um método de instância é chamada através de um objeto da classe (instância)","","\n");
+        
+        }
         #endregion
+
         #region 8. Método estático
-
+        public static void StaticMethod()
+        {
+            Utility.WriteMessage("Um método de instância é chamada diretamente na classe", "", "\n");
+        }
         #endregion
+
         #region 9. Sobrecarga de métodos (overload)
-
-        #endregion
+        public static void WriteMessage(string message)
+        {
+            //message = message.ToUpper;
+            //Console.WriteLine tem 19 overloads
+            // Console.WriteLine();
+            // Console.WriteLine("aaa");
+            // Console.WriteLine(true);
+            // Console.WriteLine(1);
+            Utility.WriteMessage(message.ToUpper());
+            ;
+        }
+      
+        public static void WriteMessage(string message1, string message2)
+        {
+            //message = message.ToUpper;
+            //Console.WriteLine tem 19 overloads
+            // Console.WriteLine();
+            // Console.WriteLine("aaa");
+            // Console.WriteLine(true);
+            // Console.WriteLine(1);
+            Utility.WriteMessage($"{message1.ToLower()}{message2.ToLower()}");
+            ;
+        }
+        public static void WriteMessage(int num)
+        {
+            //message = message.ToUpper;
+            //Console.WriteLine tem 19 overloads
+            // Console.WriteLine();
+            // Console.WriteLine("aaa");
+            // Console.WriteLine(true);
+            // Console.WriteLine(1);
+            Utility.WriteMessage($"{num}º overload");
+            ;
+        }
     }
+    #endregion
 }

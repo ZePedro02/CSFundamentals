@@ -1,0 +1,43 @@
+﻿***************************************************
+				Algoritmo calculadora
+***************************************************
+
+
+----------------------------
+1.Objetivo e Funcionalidades
+----------------------------
+
+Criar uma calculadora com as 4 operações aritméticas
+ 
+Funcionalidades:
+Apresentar menu com 4 operações: 4 com as operações
+Pedir 2 valores e a operação a executar
+
+----------------------------
+2.Arquitetura
+----------------------------
+
+Classes:
+	Utility
+		Mostrar menu(ShowMenu),
+			 para mostrar o menu- deve mostrar o meno na consola
+	
+		Ler operação
+			 (return op)- para testar deve mostrar a opção selecionada no ecra
+	
+		validar operação(ValOP),
+			 validar e retornar a operação- para testar, ao inserir um valor invalido deve deiixar o programa perguntar novamente qual é a operação e deixa msg de erro
+	
+		Ler dados(ReadData),
+			leitura e retorno de 2 números- para testar deve escrever os 2 numeros lidos pela consola no ecra
+	
+		Validar dados(ValNumber),
+			 para Validação se são números inseridos- para testar tentar escrever algo que não um número deve tornar a pedir ao utilizador para colocar numeros e mostrar msg de erro 
+	
+		Mostrar resultado(WriteResult).- testar se o resultado está correto e escrever na consola
+			
+	Class Calculadora:
+		Calcular resultado (Sum,Sub,Div,Mult),
+			metodo no void (return result) para cada operação(soma, subtração, divisão, multiplicação)- para testar tentar todas as operações possiveis e se os resultados estão corretos escrevendo-os no	ecra
+		
+	
