@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace D00_Utility
 {
@@ -67,6 +68,56 @@ namespace D00_Utility
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.ReadKey();
+        }
+
+        /*  public bool ValidarDouble(string input)
+          {
+              bool valDouble = true;
+              if (!Double.TryParse(input))
+                  Utility.WriteErrorMessage("Valor inválido!");
+              else
+              {
+                  return valDouble;
+              }
+          }
+        */
+        public int ValidateInt(string text)
+        {
+            int id;
+            while (true)
+            {
+                WriteMessage($"Inserir {text}: ", "");
+                string input = Console.ReadLine();
+                if (int.TryParse(input, out id))
+                {
+                    return id;
+                }
+                else
+                {
+                    WriteErrorMessage("IS tem de ser número inteiro!", "\n","\n");
+                    WriteMessage($"{text} : ", "");
+                }
+
+            }
+        }
+        public DateTime ValidateDate(string text)
+        {
+            DateTime Date;
+            while (true)
+            {
+                WriteMessage($"{text} : ", "");
+                string input = Console.ReadLine();
+                if (DateTime.TryParse(input, out Date))
+                {
+                    return Date;
+                }
+                else
+                {
+                    WriteErrorMessage("Formato de data incorreto! (dd/mm/yyyy)", "\n","\n");
+                    WriteMessage($"{text} : ", "");
+                }
+
+            }
         }
     }
 }

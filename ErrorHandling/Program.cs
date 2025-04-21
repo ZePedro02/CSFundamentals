@@ -5,19 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using D00_Utility;
 
-namespace D05_DataTypesArrays
+namespace ErrorHandling
 {
     class Program
     {
         static void Main(string[] args)
         {
             Utility.setUniCode();
-            Arrays.ArraySingle01();
-            Arrays.ArraySingle02();
-            Arrays.ArrayMulti01();
-            Arrays.ArrayMulti02();
-            Utility.terminateConsole();
 
+            #region Sem tratamento de erros (exceções)
+
+            #endregion
+
+            #region Com tratamento de erros (exceções)
+
+            #endregion
+
+            Utility.terminateConsole();
         }
     }
 }

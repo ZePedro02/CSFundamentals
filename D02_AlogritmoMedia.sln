@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E02_Calculadora_V01_ComClas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D05_DataTypesArrays", "D05_DataTypesArrays\D05_DataTypesArrays.csproj", "{B0342A92-5E88-4AA7-85A8-764B233E1A81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D12_ClassModifier", "D12_ClassModifier\D12_ClassModifier.csproj", "{55ADF831-9870-4413-8212-31C4E979E0C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandling", "ErrorHandling\ErrorHandling.csproj", "{3AEE3C41-4A59-4FA6-B14A-D2D1299CE233}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{B0342A92-5E88-4AA7-85A8-764B233E1A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0342A92-5E88-4AA7-85A8-764B233E1A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0342A92-5E88-4AA7-85A8-764B233E1A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55ADF831-9870-4413-8212-31C4E979E0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55ADF831-9870-4413-8212-31C4E979E0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55ADF831-9870-4413-8212-31C4E979E0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55ADF831-9870-4413-8212-31C4E979E0C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AEE3C41-4A59-4FA6-B14A-D2D1299CE233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AEE3C41-4A59-4FA6-B14A-D2D1299CE233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AEE3C41-4A59-4FA6-B14A-D2D1299CE233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AEE3C41-4A59-4FA6-B14A-D2D1299CE233}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

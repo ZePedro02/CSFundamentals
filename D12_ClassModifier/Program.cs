@@ -4,20 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using D00_Utility;
-
-namespace D05_DataTypesArrays
+namespace D12_ClassModifier
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Utility.setUniCode();
-            Arrays.ArraySingle01();
-            Arrays.ArraySingle02();
-            Arrays.ArrayMulti01();
-            Arrays.ArrayMulti02();
+             User user01 = new User();
+            user01.createUser();
+            user01.ListarUser();
             Utility.terminateConsole();
-
-        }
+    }
     }
 }

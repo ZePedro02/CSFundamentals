@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A5444E3-439B-4535-8D04-34D672DA9BFB}</ProjectGuid>
+    <ProjectGuid>{55ADF831-9870-4413-8212-31C4E979E0C4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>E02_Calculadora_V01_ComClasses</RootNamespace>
-    <AssemblyName>E02_Calculadora_V01_ComClasses</AssemblyName>
+    <RootNamespace>D12_ClassModifier</RootNamespace>
+    <AssemblyName>D12_ClassModifier</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculadora.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\D00_Utility\D00_Utility.csproj">
